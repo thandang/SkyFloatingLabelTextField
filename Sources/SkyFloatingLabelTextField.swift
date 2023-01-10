@@ -598,11 +598,12 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
      - returns: True if the title is displayed on the control, false otherwise.
      */
     open func isTitleVisible() -> Bool {
-        if errorMessagePlacement == .default {
-            return hasText || hasErrorMessage || _titleVisible
-        } else {
-            return hasText || _titleVisible
-        }
+        return false
+//        if errorMessagePlacement == .default {
+//            return hasText || hasErrorMessage || _titleVisible
+//        } else {
+//            return hasText || _titleVisible
+//        }
     }
 
     open func isErrorVisible() -> Bool {
